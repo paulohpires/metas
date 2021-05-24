@@ -9,4 +9,36 @@
   <body>
     METAS
   </body>
+  <script>
+    // valor-anual -> valor-trimestral
+    function calculaTrimestre(valorAnual) {
+      return valorAnual / 4;
+    }
+
+    function calculadoraDeMetas(valorTrimestral, valorRealizadoTrimestre) {
+      let valorRestante = valorTrimestral - valorRealizadoTrimestre;
+      let percentual = (100 * valorRealizadoTrimestre) / valorTrimestral;
+      // valorRealizadoTrimestre / valorTrimestral - 1;
+      return {
+        valorRestante: valorRestante,
+        percentual: percentual,
+      };
+    }
+
+    let valor = 100;
+    let valorTrimestral = calculaTrimestre(valor);
+    let valorRealizadoTrimestre = 50;
+    let resultado = calculadoraDeMetas(
+      valorTrimestral,
+      valorRealizadoTrimestre
+    );
+    console.log(resultado);
+  </script>
+  <!-- 
+    1 - [x] Função para calcular o valor trimestral baseado em 1 valor
+    2 - [ ] Função para calcular: (calculadoraDeMetas(valorTrimestral, valorRealizadoTrimestre))
+            - [x] percentual
+            - [x] valor restante
+            - [x] valor realizado
+   -->
 </html>
