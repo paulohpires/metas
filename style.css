@@ -1,0 +1,97 @@
+:root {
+  --spacing: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+form {
+  width: 320px;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  margin: 0;
+}
+
+.row {
+  padding: var(--spacing) 0;
+}
+
+.bottom-spacing {
+  margin-bottom: var(--spacing);
+}
+
+.parent-meta-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.parent-meta-input-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.meta-trimestre {
+  flex-direction: row;
+}
+
+.meta-trimestre-valor {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.percentage-bar {
+  display: flex;
+}
+
+.percentage-bar-item {
+  height: 10px;
+  border: 1px solid;
+}
+
+.percentage-bar-item-green {
+  border-color: green;
+  width: 80%;
+}
+
+.percentage-bar-item-red {
+  border-color: red;
+  width: 20%;
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+}
+
+.total-percentage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.total-faltam {
+  display: flex;
+  align-items: center;
+}
+
+.total-percentage-item {
+  font-weight: bold;
+  margin: 0;
+  font-size: 24px;
+}

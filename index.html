@@ -5,29 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <form>
-      <label for="meta-anual">Meta Anual</label>
-      <input type="text" id="meta-anual" required />
-      <button>Calcula Trimestre</button>
+      <div class="parent-meta-input row">
+        <div class="row">
+          <label for="meta-anual row bottom-spacing">Meta Anual</label>
+          <input type="text" id="meta-anual" required />
+        </div>
+        <div class="parent-meta-input-button-wrapper">
+          <button>Calcular</button>
+        </div>
+      </div>
       <hr />
-      <div>
+      <div class="row meta-trimestre">
         <p>Meta Trimestre</p>
-        <p>R$ 100,00</p>
+        <div>
+          <p class="meta-trimestre-valor">R$ 100,00</p>
+        </div>
       </div>
       <label for="realizado">Realizado</label>
       <input type="text" id="realizado" required />
-      <div>
-        <div></div>
-        <div></div>
+      <div class="row percentage-bar">
+        <div class="percentage-bar-item percentage-bar-item-green"></div>
+        <div class="percentage-bar-item percentage-bar-item-red"></div>
       </div>
-      <div>
-        <div>
-          <p>20%</p>
-          <p>80%</p>
+      <div class="row total">
+        <div class="total-percentage">
+          <p class="total-percentage-item">20%</p>
+          <p class="total-percentage-item">80%</p>
         </div>
-        <div>
+        <div class="total-faltam">
           <p>Faltam</p>
         </div>
       </div>
